@@ -1,0 +1,7 @@
+Comment utiliser la base de données
+
+1- créer la base de données avec comme nom TP-YanisAdafer
+2- importer la base de données sur phpmyadmin
+3- voilà le travail est fait
+
+Bonne correction

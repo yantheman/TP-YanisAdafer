@@ -1,0 +1,537 @@
+2014-11-01 20:06:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => 'Install',
+)
+Request URL: /TP-YanisAdafer/install/img/installation-bg.png
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-01 21:13:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DistributorsProduct.distributor_id' in 'field list'
+Request URL: /TP-YanisAdafer/products/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Distrib...', Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Distrib...', Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Distrib...', false)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): DboSource->read(Object(AppModel), Array)
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1886): Model->find('all', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1774): Model->_saveMulti(Array, '1', Object(Mysql))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\ProductsController.php(51): Model->save(Array)
+#9 [internal function]: ProductsController->add()
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-01 22:03:29 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:04:31 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:04:56 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:13:23 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:14:31 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:15:00 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:15:01 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:18:48 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp-yanisadafer.users' doesn't exist
+Request URL: /TP-YanisAdafer/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\Database\Mysql.php(333): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1321): Mysql->describe(Object(User))
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Helper\CakeStrapFormHelper.php(19): FormHelper->create('User', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\form_login.ctp(6): CakeStrapFormHelper->create('User', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(1191): View->_render('C:\Program File...', Array)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(408): View->_renderElement('C:\Program File...', Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\login.ctp(2): View->element('form_login')
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(931): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(893): View->_evaluate('C:\Program File...', Array)
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(462): View->_render('C:\Program File...')
+#15 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-01 22:28:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DistributorsProduct.distributor_id' in 'where clause'
+Request URL: /TP-YanisAdafer/distributors/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Distrib...', Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Distrib...', Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Distrib...', false)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): DboSource->read(Object(AppModel), Array)
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1886): Model->find('all', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1774): Model->_saveMulti(Array, '1', Object(Mysql))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\DistributorsController.php(51): Model->save(Array)
+#9 [internal function]: DistributorsController->add()
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DistributorsController), Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DistributorsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-01 22:34:57 Error: [MissingTableException] Table distributors_products for model DistributorsProduct was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'distributors_products',
+  'class' => 'DistributorsProduct',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/distributors/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('distributors_pr...')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(862): Model->schema()
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(887): Model->__isset('DistributorsPro...')
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3379): Model->__get('DistributorsPro...')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\ModelValidator.php(429): Model->joinModel('DistributorsPro...')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\ModelValidator.php(103): ModelValidator->_validateWithModels(Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3141): ModelValidator->validates(Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1675): Model->validates(Array)
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\DistributorsController.php(51): Model->save(Array)
+#10 [internal function]: DistributorsController->add()
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DistributorsController), Array)
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DistributorsController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-11-01 22:36:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DistributorsProduct.distributor_id' in 'where clause'
+Request URL: /TP-YanisAdafer/distributors/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Distrib...', Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Distrib...', Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Distrib...', false)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): DboSource->read(Object(AppModel), Array)
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1886): Model->find('all', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1774): Model->_saveMulti(Array, '2', Object(Mysql))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\DistributorsController.php(51): Model->save(Array)
+#9 [internal function]: DistributorsController->add()
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DistributorsController), Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DistributorsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-02 23:16:11 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('users')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:24:32 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('users')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:24:32 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\nav.ctp, line 90]
+2014-11-02 23:24:32 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 90)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 90, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 90, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-02 23:24:46 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('users')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:24:46 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Elements\nav.ctp, line 90]
+2014-11-02 23:24:46 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 90)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 90, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 90, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-02 23:25:46 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('users')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:25:48 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/i18n/img/flags/en.png
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('i18n/img/flags/...')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:25:48 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/i18n/img/flags/de.png
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('i18n/img/flags/...')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:25:48 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/i18n/img/flags/fr.png
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('i18n/img/flags/...')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:25:48 Error: [MissingPluginException] Plugin I18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'I18n',
+)
+Request URL: /TP-YanisAdafer/i18n/img/flags/pt.png
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('I18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('I18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('Routing/Route', 'I18n')
+#3 [internal function]: App::load('I18nRoute')
+#4 [internal function]: spl_autoload_call('I18nRoute')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(203): class_exists('I18nRoute')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(340): Router::_validateRouteClass('I18nRoute')
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Plugin\i18n\Config\routes.php(19): Router::connect('/:plugin/:contr...', Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(249): include('C:\Program File...')
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(204): CakePlugin::_includeFile('C:\Program File...', false)
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\CakePlugin.php(193): CakePlugin::routes('i18n')
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\routes.php(50): CakePlugin::routes()
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(1224): include('C:\Program File...')
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Router.php(552): Router::_loadRoutes()
+#14 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(215): Router::parse('i18n/img/flags/...')
+#15 [internal function]: Dispatcher->parseParams(Object(CakeEvent))
+#16 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
+2014-11-02 23:27:57 Error: [MissingPluginException] Plugin i18n could not be found.
+Exception Attributes: array (
+  'plugin' => 'i18n',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(367): CakePlugin::path('i18n')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(228): App::pluginPath('i18n')
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(549): App::path('View/Helper', 'i18n')
+#3 [internal function]: App::load('i18nHelper')
+#4 [internal function]: spl_autoload_call('i18nHelper')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\HelperCollection.php(130): class_exists('i18nHelper')
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(869): HelperCollection->load('i18n.i18n', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\View\View.php(343): View->loadHelpers()
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(1240): View->__construct(Object(UsersController))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(938): Controller->_getViewObject()
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-02 23:27:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/css/cake.generic.css
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-02 23:27:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/img/cake.power.gif
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -16,6 +16,7 @@
         <tr>
           <th>#</th>
           <th><?php echo __('Username') ?></th>
+          <th><?php echo __('Avatar') ?></th>    
           <th><?php echo __('Role') ?></th>
           <th>#</th>
         </tr>
@@ -25,6 +26,7 @@
         <tr>
           <td width="50px"><?php echo $user['User']['id'] ?></td>
           <td><?php echo $user['User']['username'] ?></td>
+          <td><?php echo $user['User']['avatar'] ?></td>
           <td><?php echo $user['User']['role'] ?></td>
           <td width="150px">
             <?php echo $this->Html->link(__('View'),'/users/view/'.$user['User']['username']) ?> |

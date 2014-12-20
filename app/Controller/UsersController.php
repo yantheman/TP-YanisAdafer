@@ -74,16 +74,24 @@ class UsersController extends AppController {
 			$this->User->create();
 
 			if ($this->User->save($this->request->data)) {
-				if( AuthComponent::user('id') ) {
+                $extension = strtolower(pathinfo($this->request->data['User']['avatar_file']['name'], PATHINFO_EXTENSION));
+                
+                if(!empty($this->request->data['User']['avatar_file']['tmp_name']) && in_array($extension, array('jpg', 'png', 'svg', 'jpeg'))) {
+                    move_uploaded_file($this->request->data['User']['avatar_file']['tmp_name'], IMAGES . 'avatars' . DS . $this->User->id . '.' . $extension);
+                    $this->User->saveField('avatar' , $extension);
+                }
+                
+                if( AuthComponent::user('id') ) {
 					# Store log
 					CakeLog::info('The user '.AuthComponent::user('username').' (ID: '.AuthComponent::user('id').') registered user (ID: '.$this->User->id.')','users');
 				}
-				$this->Session->setFlash(__('The user has been saved'), 'flash_success');
-				$this->redirect('/home');
-			} else {
+				    $this->Session->setFlash(__('The user has been saved'), 'flash_success');
+				    $this->redirect('/home');
+			 } else {
 				# Create a loop with validation errors
 				$this->Error->set($this->User->invalidFields());
 			}
+            
 		}
 		$this->set('label', 'Register user');
 		$this->render('_form');
@@ -109,6 +117,13 @@ class UsersController extends AppController {
 			if (empty($this->request->data['User']['password'])) {
 				unset($this->request->data['User']['password']);
 			}
+            
+            $extension = strtolower(pathinfo($this->request->data['User']['avatar_file']['name'], PATHINFO_EXTENSION));
+                
+            if(!empty($this->request->data['User']['avatar_file']['tmp_name']) && in_array($extension, array('jpg', 'png', 'svg', 'jpeg'))) {
+                move_uploaded_file($this->request->data['User']['avatar_file']['tmp_name'], IMAGES . 'avatars' . DS . $this->User->id . '.' . $extension);
+                $this->User->saveField('avatar' , $extension);
+            }
 
 			if ($this->User->save($this->request->data)) {
 				# Store log

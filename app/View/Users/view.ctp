@@ -20,6 +20,7 @@ echo $this->element('breadcrumb',array('links' => $breadcrumb));
   <div class="media-body">
     <h4 class="media-heading"><?php echo $user['username'] ?></h4>
     <strong>Email: </strong><?php echo $user['email'] ?><br/>
+    <strong>Avatar: </strong><?php echo $user['avatar'] ?><br/>
 	<strong>Role: </strong><?php echo $user['role'] ?>
   </div>
 </div>

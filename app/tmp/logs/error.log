@@ -535,3 +535,53 @@ Request URL: /TP-YanisAdafer/img/cake.power.gif
 Stack Trace:
 #0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-20 20:55:16 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Users\_form.ctp, line 22]
+2014-12-20 20:55:16 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /TP-YanisAdafer/users/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 22, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 22, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-20 21:18:46 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\UsersController.php, line 78]
+2014-12-20 21:18:46 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 78, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 78, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-20 21:21:01 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\UsersController.php, line 78]
+2014-12-20 21:21:01 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 78, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 78, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-20 21:21:04 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\UsersController.php, line 78]
+2014-12-20 21:21:04 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 78, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 78, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-20 21:32:00 Error: Fatal Error (1): Function name must be a string in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\UsersController.php, line 75]
+2014-12-20 21:32:00 Error: [FatalErrorException] Function name must be a string
+Request URL: /TP-YanisAdafer/users/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\Program File...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\Program File...', 75, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\Program File...', 75, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

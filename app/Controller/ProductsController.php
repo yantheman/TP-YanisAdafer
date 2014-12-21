@@ -56,7 +56,9 @@ class ProductsController extends AppController {
 			}
 		}
 		$distributors = $this->Product->Distributor->find('list');
-		$this->set(compact('distributors'));
+        $categories = $this->Product->Subcategory->Category->find('list');
+        $subcategories = array('Choose a category');
+        $this->set(compact( 'categories', 'subcategories', 'distributors'));
 	}
 
 /**
@@ -82,7 +84,9 @@ class ProductsController extends AppController {
 			$this->request->data = $this->Product->find('first', $options);
 		}
 		$distributors = $this->Product->Distributor->find('list');
-		$this->set(compact('distributors'));
+        $categories = $this->Product->Subcategory->Category->find('list');
+        $subcategories = array('Choose a category');
+        $this->set(compact( 'categories', 'subcategories', 'distributors'));
 	}
 
 /**

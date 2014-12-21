@@ -8,6 +8,8 @@
 		echo $this->Form->input('description');
 		echo $this->Form->input('price');
 		echo $this->Form->input('Distributor');
+        echo $this->Form->input('category_id');
+        echo $this->Form->input('subcategory_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
@@ -24,3 +26,21 @@
 		<li><?php echo $this->Html->link(__('New Distributor'), array('controller' => 'distributors', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
+
+<?php
+$this->Js->get('#ProductCategoryId')->event('click', 
+$this->Js->request(array(
+'controller'=>'subcategories',
+'action'=>'getByCategory'
+), array(
+'update'=>'#ProductSubcategoryId',
+'async' => true,
+'method' => 'post',
+'dataExpression'=>true,
+'data'=> $this->Js->serializeForm(array(
+'isForm' => true,
+'inline' => true
+))
+))
+);
+?>

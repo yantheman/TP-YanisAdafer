@@ -69,7 +69,7 @@ class Product extends AppModel {
 		)
 	);
 
-
+    
 /**
  * hasAndBelongsToMany associations
  *
@@ -90,5 +90,15 @@ class Product extends AppModel {
 			'finderQuery' => '',
 		)
 	);
+    
+    public $belongsTo = array(
+        'Subcategory' => array(
+        'className' => 'Subcategory',
+        'foreignKey' => 'subcategory_id',
+        'conditions' => '',
+        'fields' => '',
+        'order' => ''
+        )
+    );
 
 }

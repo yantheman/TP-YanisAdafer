@@ -65,4 +65,6 @@ class PagesController extends AppController {
 	}
 
 	public function maintenance(){}
+    
+    public function about(){}
 }

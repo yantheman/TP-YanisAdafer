@@ -635,3 +635,236 @@ Stack Trace:
 #3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-22 00:42:58 Error: [MissingControllerException] Controller class Products.svgController could not be found.
+Exception Attributes: array (
+  'class' => 'Products.svgController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/products.svg
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 00:44:13 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/webroot/img/products.svg
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 00:46:09 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/webroot/img/products.svg
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 00:50:12 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/webroot/img/products.svg
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 01:07:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /TP-YanisAdafer/css/lgo.css
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 01:49:57 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\database.php, line 58]
+2014-12-22 01:49:57 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /TP-YanisAdafer/home
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 58, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 58, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 01:56:37 Error: [MissingConnectionException] Database connection "Sqlite" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Sqlite',
+  'message' => 'SQLSTATE[HY000] [14] unable to open database file',
+  'enabled' => true,
+)
+Request URL: /TP-YanisAdafer/home
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Datasource\DboSource.php(262): Sqlite->connect()
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2862): Model->getDataSource()
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2782): Model->_findCount('before', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2717): Model->buildQuery('count', Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\PagesController.php(64): Model->find('count')
+#9 [internal function]: PagesController->index()
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-12-22 02:00:30 Error: Fatal Error (4): syntax error, unexpected '-', expecting ')' in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Config\database.php, line 63]
+2014-12-22 02:00:30 Error: [FatalErrorException] syntax error, unexpected '-', expecting ')'
+Request URL: /TP-YanisAdafer/home
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 63)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 63, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 63, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 02:08:12 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/home
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2862): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2782): Model->_findCount('before', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2717): Model->buildQuery('count', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\PagesController.php(64): Model->find('count')
+#5 [internal function]: PagesController->index()
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 02:08:20 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\UsersController.php(13): Controller->paginate()
+#6 [internal function]: UsersController->index()
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-22 02:09:01 Error: [MissingTableException] Table distributors for model Distributor was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'distributors',
+  'class' => 'Distributor',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/distributors
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('distributors')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\DistributorsController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: DistributorsController->index()
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DistributorsController), Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(DistributorsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 02:09:05 Error: [MissingTableException] Table members for model Member was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'members',
+  'class' => 'Member',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/members
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('members')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\MembersController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: MembersController->index()
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 02:10:18 Error: [MissingTableException] Table members for model Member was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'members',
+  'class' => 'Member',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/members
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('members')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\MembersController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: MembersController->index()
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 02:10:23 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/home
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2862): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2782): Model->_findCount('before', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2717): Model->buildQuery('count', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\PagesController.php(64): Model->find('count')
+#5 [internal function]: PagesController->index()
+#6 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 02:10:26 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /TP-YanisAdafer/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2750): Model->getDataSource()
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Model\Model.php(2722): Model->_readDataSource('all', Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\Controller\UsersController.php(13): Controller->paginate()
+#6 [internal function]: UsersController->index()
+#7 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-22 02:11:15 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\app\View\Pages\index.ctp, line 125]
+2014-12-22 02:11:15 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /TP-YanisAdafer/home
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 125)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 125, Array)
+#2 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 125, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP-YanisAdafer\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
